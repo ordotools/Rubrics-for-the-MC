@@ -1,0 +1,33 @@
+\documentclass[letterpaper]{report}
+\title{Holy Week 2025}
+\date{April 13-19, 2025}
+
+\usepackage{rubrics}
+\usepackage{booktabs}
+\usepackage{csquotes}
+\usepackage[backend=biber,style=reading,style=verbose-ibid]{biblatex}
+\addbibresource{~/Library/texmf/bibtex/bib/rubrics.bib}
+\usepackage{enumitem}
+\usepackage{import}
+
+\newcommand{\pbr}[0]{\textit{per breviorum}}
+
+\begin{document}
+
+\maketitle
+
+% cantata
+\import{../holyweek-cantata/ceremonies/}{palmsunday.tex}
+
+% pontifical
+\import{../holyweek-pontifical/ceremonies/}{maundythursday.tex}
+
+% pontifical
+\import{../holyweek-pontifical/ceremonies/}{goodfriday.tex}
+
+% cantata
+\import{../holyweek-cantata/ceremonies/}{holysaturday.tex}
+
+\printbibliography
+
+\end{document}
